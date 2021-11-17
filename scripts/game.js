@@ -36,7 +36,7 @@ function handleMove(position) {
 }
 
 function isWin() {
- 
+
     for (let i = 0; i < winStates.length; i++) {
         let seq = winStates[i];
         let pos1 = seq[0];
@@ -53,3 +53,17 @@ function isWin() {
 
     return false;
 }
+
+
+function resetGame() {
+
+    for (let position = 0; board.length; position++) {
+        let square = document.getElementById(position.toString());
+        board[position] = '';
+        square.innerHTML = '';
+    }
+    let playerTime = 0;
+    let gameOver = false;
+}
+
+button.addEventListener("click", resetGame)

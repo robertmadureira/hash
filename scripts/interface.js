@@ -14,7 +14,7 @@ function handleClick(event) {
     if (handleMove(position)) {
 
         setTimeout(() => {
-            alert("O JOGO ACABOU - O Vencedor foi " + playerTime);
+            alert("O JOGO ACABOU - O Vencedor foi " + (playerTime+1));
         }, 10);
     };
     updateSquares(position);
@@ -25,3 +25,4 @@ function updateSquares(position){
     let symbol = board[position];
     square.innerHTML = `<div class='${symbol}'></div>`
 }
+

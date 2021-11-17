@@ -1,3 +1,4 @@
+
 body{
     text-align: center;
 }
@@ -10,8 +11,8 @@ h1{
 .square{
     width: 100px;
     height: 100px;
-    background-color: bisque;
-    border: 1px solid gray;
+    background-color: #8fbc8f;
+    border: 1px solid black;
     display: inline-block;
 }
 
@@ -42,5 +43,17 @@ h1{
     bottom:0;
     left:0;
     right:0;
+}
+
+#button{
+    background: #142311;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    padding: 0 15px;
+    color: #FFFFFF;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 700;
 }
 
